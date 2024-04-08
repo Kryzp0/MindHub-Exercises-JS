@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Events</title>
+</head>
+<body>
+    <section class="bg-[#fde4de] h-screen w-full flex justify-center items-center">
+        <div class="flex flex-wrap justify-center h-[90%] w-[90%] items-center gap-10">
+            <div class="flex w-[400px] h-[400px] bg-[#d3d3d3] border-[#cee6ca] border-2 rounded-lg flex-col gap-10 p-10">
+                <label><h2>Estatura</h2>
+                    en centímetros <br>
+                    <input class="text-center" id="inputEstatura" type="text">
+                </label>
+                <label><h2>Peso</h2>
+                    en kilogramos <br>
+                    <input class="text-center" id="inputPeso" type="text">
+                </label>
+                <button id="boton1" class="border-2 border-black bg-yellow-400 h-[50px] w-[200px] text-4xl">Calcular</button>
+            </div>
+            <div class="flex w-[400px] h-[200px] bg-[#d3d3d3] border-[#cee6ca] border-2 rounded-lg flex-col p-10 justify-between">
+                <label>
+                    <h2>Resultado</h2>
+                    su índice de masa corporal es <br>
+                    <input class="bg-white text-center" id="inputResultado" type="text" disabled>
+                </label>
+            </div>
+        </div>
+    </section>
+    <script src="./script3.js"></script>
+</body>
+</html>

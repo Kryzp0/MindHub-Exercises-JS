@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>Events</title>
+</head>
+<body>
+    <section class="bg-[#fde4de] h-screen w-full flex justify-center items-center">
+        <div class="flex flex-wrap justify-center h-[90%] w-[90%] items-center gap-10">
+            <div class="flex w-[500px] h-[500px] bg-[#d3d3d3] border-[#cee6ca] border-2 rounded-lg flex-col gap-10 p-10">
+                <label><h2 class="text-2xl font-semibold">Monto moneda local</h2>
+                    sin comas ni puntos <br>
+                    <input class="w-[90%] h-[40px] text-center" id="inputLocal" type="text" value="0">
+                </label>
+                <label><h2 class="text-2xl font-semibold">Monto en dólares</h2>
+                    sin comas ni puntos <br>
+                    <input class="w-[90%] h-[40px] bg-white text-center" id="outputDolares" type="text" value="0" disabled>
+                </label>
+                <div class="flex gap-10">
+                    <button id="convert1" class="border-2 border-black bg-yellow-400 h-[50px] w-[200px] text-4xl">Convert</button>
+                    <button id="delete1" class="border-2 border-black bg-yellow-400 h-[50px] w-[200px] text-4xl">Delete</button>
+                </div>
+            </div>
+            <div class="flex w-[500px] h-[500px] bg-[#d3d3d3] border-[#cee6ca] border-2 rounded-lg flex-col gap-10 p-10">
+                <label><h2 class="text-2xl font-semibold">Monto moneda dólares</h2>
+                    sin comas ni puntos <br>
+                    <input class="w-[90%] h-[40px] text-center" id="inputDolares" type="text" value="0">
+                </label>
+                <label><h2 class="text-2xl font-semibold">Monto moneda local</h2>
+                    sin comas ni puntos <br>
+                    <input class="w-[90%] h-[40px] bg-white text-center" id="outputLocal" type="text" value="0" disabled>
+                </label>
+                <div class="flex gap-10">
+                    <button id="convert2" class="border-2 border-black bg-yellow-400 h-[50px] w-[200px] text-4xl">Convert</button>
+                    <button id="delete2" class="border-2 border-black bg-yellow-400 h-[50px] w-[200px] text-4xl">Delete</button>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./script4.js"></script>
+</body>
+</html>
